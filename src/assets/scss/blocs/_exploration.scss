@@ -1,0 +1,31 @@
+.exploration {
+  background: $blanc;
+  text-align: center;
+
+  &__localisation {
+    padding: 1rem 0;
+    background: linear-gradient(
+      180deg,
+      darken($blanc, 16) 0%,
+      darken($blanc, 4) 8%,
+      darken($blanc, 4) 100%
+    );
+
+    .fas {
+      margin-right: 1rem;
+    }
+  }
+  &__titre {
+    margin: 2.5rem auto 1rem auto;
+    width: 80%;
+  }
+  &__description {
+    margin: 0 auto 2rem auto;
+    width: 80%;
+    color: $gris-50;
+  }
+  &__bouton {
+    @include bouton;
+    margin-bottom:3.5rem;
+  }
+}

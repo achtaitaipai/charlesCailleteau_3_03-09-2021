@@ -1,0 +1,56 @@
+.restaurants {
+    background: $blanc;
+    padding: 3.5rem 5%;
+    &__titre {
+      margin-bottom: 1.5rem;
+    }
+    &__grid {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      gap: 1rem;
+    }
+  }
+  
+  .restauCarte {
+    width: 100%;
+    border-radius: 1rem;
+    overflow: hidden;
+    -webkit-box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.08);
+    box-shadow: 0px 5px 10px 2px rgb(0 0 0 / 8%);
+    &__image {
+      width: 100%;
+      height: 10.9rem;
+      object-fit: cover;
+      object-position: center center;
+    }
+    &__footer {
+      height: 4.7rem;
+      padding: 1.2rem 1rem;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap:0.2rem;
+    }
+    &__nom {
+      font-weight: 800;
+    }
+  }
+  .restauCarte--nouveau {
+    position: relative;
+    &::after {
+      content: "Nouveau";
+      position: absolute;
+      right: 1rem;
+      top: 1rem;
+      font-size: 1rem;
+      padding: 0.25rem 0.5rem;
+      color: $vert-50;
+      background: $vert-90;
+      border-radius: 0.1rem;
+    }
+  }

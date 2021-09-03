@@ -1,0 +1,6 @@
+// Fondation du site : police, normes qui s'appliquent partout
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

@@ -1,0 +1,26 @@
+.footer {
+    padding: 1.5rem;
+    background: $gris-20;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+    width: 100%;
+    color: white;
+  
+    &__logo {
+      height: 1rem;
+      filter: invert(1);
+      margin-bottom: 0.3rem;
+    }
+    &__lien {
+      color: white;
+      i {
+        width: 1.5rem;
+        font-size: 0.8rem;
+      }
+      &--logo {
+        font-family: "Shrikhand", cursive;
+      }
+    }
+  }

@@ -1,0 +1,54 @@
+@mixin bouton-coeur {
+  cursor: pointer;
+  border: none;
+  font-size: 1.2rem;
+  background: transparent;
+  &:hover .coeur::after {
+    max-height: 0%;
+  }
+  .coeur {
+    position: relative;
+    padding-left: 1em;
+
+    &::after,
+    &::before {
+      content: "\f004";
+      font-style: normal;
+      font-family: "Font Awesome 5 Free";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 2rem;
+    }
+
+    &::before {
+      font-weight: 900;
+      background: -webkit-linear-gradient($violet, $rose);
+      -webkit-text-stroke: 1px transparent;
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    &::after {
+      font-weight: 900;
+      -webkit-text-stroke: 1px rgb(0, 0, 0);
+      -webkit-text-fill-color: white;
+      max-height: 100%;
+      overflow: hidden;
+      transition: max-height 600ms ease-out;
+    }
+  }
+}
+
+@mixin bouton {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  background: $violet;
+  background: linear-gradient(170deg, $rose -10%, $violet 100%);
+  color: white;
+  border-radius: 2rem;
+  box-shadow: 0px 5px 10px 2px rgb(0 0 0 / 8%);
+  border: none;
+  text-decoration: none;
+}
