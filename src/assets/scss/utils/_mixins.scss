@@ -41,7 +41,6 @@
 }
 
 @mixin bouton {
-  display: inline-block;
   padding: 0.8rem 1.5rem;
   font-size: 1rem;
   background: $violet;
@@ -51,4 +50,5 @@
   box-shadow: 0px 5px 10px 2px rgb(0 0 0 / 8%);
   border: none;
   text-decoration: none;
+  cursor: pointer;
 }

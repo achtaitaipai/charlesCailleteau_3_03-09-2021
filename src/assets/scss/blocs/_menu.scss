@@ -1,0 +1,55 @@
+.container{
+  background: $blanc;
+}
+.menu {
+    background: $blanc;
+    border-radius: 2rem 2rem 0 0;
+    transform: translateY(-2rem);
+    padding: 2.5rem 1rem;
+  
+    &__titre {
+      font-family: "Shrikhand", cursive;
+      font-weight: 400;
+      font-size: 1.7rem;
+      line-height: 1.2rem;
+      display: inline-block;
+      margin-bottom: 3rem;
+  
+    }
+    &__btnCoeur {
+      @include bouton-coeur;
+      float: right;
+      margin-right: 1rem;
+    }
+    &__bouton{
+      text-align: center
+    }
+    &__commander{
+      @include bouton;
+      display: block;
+      margin: auto;
+    }
+  }
+  .entrees,.plats,.desserts{
+    margin-bottom: 3rem;
+    border: none;
+      &__titre{
+          position: relative;
+          text-transform: uppercase;
+          font-weight: 400;
+          font-size: 1rem;
+          margin-bottom: 1.5rem;
+          &::after{
+              content: " ";
+              position: absolute;
+              left: 0;
+              top: 1.4rem;
+  
+              background: $vert-90;
+              height: 3px;
+              width: 2.5rem;
+          }
+      }
+  
+  }
+  

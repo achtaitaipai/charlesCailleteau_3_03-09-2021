@@ -5,10 +5,10 @@ $letter-rotation-duration:1.4s;
 $letter-rotation-delay:0.1s;
 $letter-rotation-function:cubic-bezier(0.76, 0, 0.24, 1);
 @debug $letter-rotation-delay;
-body {
-    overflow: hidden;
-    animation: body-overflow 0.01s $loading-delay+$loader-disparition-duration forwards;
-  }
+// body {
+//     overflow: hidden;
+//     animation: body-overflow 0.01s $loading-delay+$loader-disparition-duration forwards;
+//   }
 .loader {
     position: fixed;
     left: 0;
