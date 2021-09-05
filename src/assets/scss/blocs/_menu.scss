@@ -1,55 +1,86 @@
-.container{
+.container {
   background: $blanc;
 }
 .menu {
-    background: $blanc;
-    border-radius: 2rem 2rem 0 0;
-    transform: translateY(-2rem);
-    padding: 2.5rem 1rem;
-  
-    &__titre {
-      font-family: "Shrikhand", cursive;
-      font-weight: 400;
-      font-size: 1.7rem;
-      line-height: 1.2rem;
-      display: inline-block;
-      margin-bottom: 3rem;
-  
-    }
-    &__btnCoeur {
-      @include bouton-coeur;
-      float: right;
-      margin-right: 1rem;
-    }
-    &__bouton{
-      text-align: center
-    }
-    &__commander{
-      @include bouton;
-      display: block;
-      margin: auto;
-    }
-  }
-  .entrees,.plats,.desserts{
+  background: $blanc;
+  border-radius: 2rem 2rem 0 0;
+  transform: translateY(-2rem);
+  padding: 2.5rem 5%;
+  &__header{
+    max-width: 550px;
+    margin: auto;
     margin-bottom: 3rem;
-    border: none;
-      &__titre{
-          position: relative;
-          text-transform: uppercase;
-          font-weight: 400;
-          font-size: 1rem;
-          margin-bottom: 1.5rem;
-          &::after{
-              content: " ";
-              position: absolute;
-              left: 0;
-              top: 1.4rem;
-  
-              background: $vert-90;
-              height: 3px;
-              width: 2.5rem;
-          }
-      }
-  
+    display: flex;
+    justify-content: space-between;
+    @media screen and (min-width: 470px) {
+      justify-content: center;
+      gap: 2rem;
+    }
+    @media screen and (min-width: 870px) {
+      max-width: 100%;
+    }
   }
-  
+  &__titre {
+    font-family: "Shrikhand", cursive;
+    font-weight: 400;
+    font-size: 1.7rem;
+    line-height: 1.2rem;
+    display: inline-block;
+  }
+  &__btnCoeur {
+    @include bouton-coeur;
+    float: right;
+    margin-right: 1rem;
+  }
+  &__bouton {
+    text-align: center;
+  }
+  &__commander {
+    @include bouton;
+    display: block;
+    margin: auto;
+  }
+  &__grid {
+    width: 100%;
+    @media screen and (min-width: 870px) {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+  }
+}
+.entrees,
+.plats,
+.desserts {
+  margin-bottom: 3rem;
+  border: none;
+  max-width: 550px;
+  margin: 0 auto 3rem auto;
+  @media screen and (min-width: 870px) {
+    width: 30%;
+  }
+  &__titre {
+    position: relative;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    @media screen and (min-width: 470px) and (max-width: 869px) {
+      text-align: center;
+    }
+    &::after {
+      content: " ";
+      position: absolute;
+      left: 0;
+      top: 1.4rem;
+
+      background: $vert-90;
+      height: 3px;
+      width: 2.5rem;
+      @media screen and (min-width: 470px) and (max-width: 869px) {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+}

@@ -7,11 +7,10 @@
     gap: 0.75rem;
     width: 100%;
     color: white;
-  
-    &__logo {
-      height: 1rem;
-      filter: invert(1);
-      margin-bottom: 0.3rem;
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
     }
     &__lien {
       color: white;

@@ -22,198 +22,139 @@
       </a>
     </header>
     <main class="container">
-      <section class="couverture">
+      <div class="couverture">
         <img
-          src="assets\images\restaurants\toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+          src="assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
           alt=""
           class="couverture__image"
         />
-      </section>
-      <form class="menu">
-        <h2 class="menu__titre">À la française</h2>
-        <button class="menu__btnCoeur">
-          <i class="coeur"></i>
-        </button>
-        <!-- ENTREES -->
-        <fieldset class="entrees">
-          <legend class="entrees__titre">entrées</legend>
-          <div class="entrees__grid">
-            <input
-              type="checkbox"
-              id="entree1"
-              name="entree1"
-              class="platCheckBox"
-            />
-            <label class="platCarte" for="entree1">
-              <div class="platCarte__description">
-                <h3 class="platCarte__nom">Tartare de poulpe acidulé</h3>
-                <p class="platCarte__detail">Aux zests d'orange</p>
+      </div>
+      <section class="menu">
+        <div class="menu__header">
+          <h2 class="menu__titre">À la française</h2>
+          <button class="menu__btnCoeur">
+            <i class="coeur"></i>
+          </button>
+        </div>
+        <div class="menu__grid">
+          <!-- ENTREES -->
+          <div class="entrees">
+            <h2 class="entrees__titre">entrées</h2>
+            <div class="entrees__grid">
+              <div class="platCarte" >
+                <div class="platCarte__description">
+                  <h3 class="platCarte__nom">Tartare de poulpe acidulé</h3>
+                  <p class="platCarte__detail">Aux zests d'orange</p>
+                </div>
+                <span class="platCarte__prix">25€</span>
+                <div class="platCarte__check">
+                  <i class="fas fa-check-circle"></i>
+                </div>
               </div>
-              <span class="platCarte__prix">25€</span>
-              <div class="platCarte__check">
-                <i class="fas fa-check-circle"></i>
+              <div class="platCarte" >
+                <div class="platCarte__description">
+                  <h3 class="platCarte__nom">Velouté de légumes d'antan</h3>
+                  <p class="platCarte__detail">Carotte, panais, topinambour</p>
+                </div>
+                <span class="platCarte__prix">35€</span>
+                <div class="platCarte__check">
+                  <i class="fas fa-check-circle"></i>
+                </div>
               </div>
-            </label>
-
-            <input
-              type="checkbox"
-              id="entree2"
-              name="entree2"
-              class="platCheckBox"
-            />
-            <label class="platCarte" for="entree2">
-              <div class="platCarte__description">
-                <h3 class="platCarte__nom">Velouté de légumes d'antan</h3>
-                <p class="platCarte__detail">Carotte, panais, topinambour</p>
+              <div class="platCarte" >
+                <div class="platCarte__description">
+                  <h3 class="platCarte__nom">Soupe à l'oignon</h3>
+                  <p class="platCarte__detail">Revisitée</p>
+                </div>
+                <span class="platCarte__prix">20€</span>
+                <div class="platCarte__check">
+                  <i class="fas fa-check-circle"></i>
+                </div>
               </div>
-              <span class="platCarte__prix">35€</span>
-              <div class="platCarte__check">
-                <i class="fas fa-check-circle"></i>
-              </div>
-            </label>
-
-            <input
-              type="checkbox"
-              id="entree3"
-              name="entree3"
-              class="platCheckBox"
-            />
-            <label class="platCarte" for="entree3">
-              <div class="platCarte__description">
-                <h3 class="platCarte__nom">Soupe à l'oignon</h3>
-                <p class="platCarte__detail">Revisitée</p>
-              </div>
-              <span class="platCarte__prix">20€</span>
-              <div class="platCarte__check">
-                <i class="fas fa-check-circle"></i>
-              </div>
-            </label>
+            </div>
           </div>
-        </fieldset>
-        <!-- PLATS -->
-        <fieldset class="plats">
-          <legend class="plats__titre">plats</legend>
-          <div class="plats__grid">
-            <input
-              type="checkbox"
-              id="plat1"
-              name="plat1"
-              class="platCheckBox"
-            />
-            <label class="platCarte" for="plat1">
-              <div class="platCarte__description">
-                <h3 class="platCarte__nom">Coquilles Saint-Jacques</h3>
-                <p class="platCarte__detail">
-                  Accompagnées d'une purée de panais
-                </p>
+          <!-- PLATS -->
+          <div class="plats">
+            <h2 class="plats__titre">plats</h2>
+            <div class="plats__grid">
+              <div class="platCarte" >
+                <div class="platCarte__description">
+                  <h3 class="platCarte__nom">Coquilles Saint-Jacques</h3>
+                  <p class="platCarte__detail">
+                    Accompagnées d'une purée de panais
+                  </p>
+                </div>
+                <span class="platCarte__prix">40€</span>
+                <div class="platCarte__check">
+                  <i class="fas fa-check-circle"></i>
+                </div>
               </div>
-              <span class="platCarte__prix">40€</span>
-              <div class="platCarte__check">
-                <i class="fas fa-check-circle"></i>
+              <div class="platCarte" >
+                <div class="platCarte__description">
+                  <h3 class="platCarte__nom">Magret de canard</h3>
+                  <p class="platCarte__detail">
+                    Et parmentier de pommes de terres
+                  </p>
+                </div>
+                <span class="platCarte__prix">35€</span>
+                <div class="platCarte__check">
+                  <i class="fas fa-check-circle"></i>
+                </div>
               </div>
-            </label>
-
-            <input
-              type="checkbox"
-              id="plat2"
-              name="plat2"
-              class="platCheckBox"
-            />
-            <label class="platCarte" for="plat2">
-              <div class="platCarte__description">
-                <h3 class="platCarte__nom">Magret de canard</h3>
-                <p class="platCarte__detail">
-                  Et parmentier de pommes de terres
-                </p>
+              <div class="platCarte" >
+                <div class="platCarte__description">
+                  <h3 class="platCarte__nom">Pigeonneau d'Ille-et-Vilaine</h3>
+                  <p class="platCarte__detail">
+                    Sur sont lit de gnocchis aux légumes
+                  </p>
+                </div>
+                <span class="platCarte__prix">44€</span>
+                <div class="platCarte__check">
+                  <i class="fas fa-check-circle"></i>
+                </div>
               </div>
-              <span class="platCarte__prix">35€</span>
-              <div class="platCarte__check">
-                <i class="fas fa-check-circle"></i>
-              </div>
-            </label>
-
-            <input
-              type="checkbox"
-              id="plat3"
-              name="plat3"
-              class="platCheckBox"
-            />
-            <label class="platCarte" for="plat3">
-              <div class="platCarte__description">
-                <h3 class="platCarte__nom">Pigeonneau d'Ille-et-Vilaine</h3>
-                <p class="platCarte__detail">
-                  Sur sont lit de gnocchis aux légumes
-                </p>
-              </div>
-              <span class="platCarte__prix">44€</span>
-              <div class="platCarte__check">
-                <i class="fas fa-check-circle"></i>
-              </div>
-            </label>
+            </div>
           </div>
-        </fieldset>
-        <!-- DESSERTS -->
-        <fieldset class="desserts">
-          <legend class="desserts__titre">desserts</legend>
-          <div class="desserts__grid">
-            <input
-              type="checkbox"
-              id="dessert1"
-              name="dessert1"
-              class="platCheckBox"
-            />
-            <label class="platCarte" for="dessert1">
-              <div class="platCarte__description">
-                <h3 class="platCarte__nom">Pétales de violettes glacés</h3>
-                <p class="platCarte__detail">Et purée de noisettes</p>
+          <!-- DESSERTS -->
+          <div class="desserts">
+            <h2 class="desserts__titre">desserts</h2>
+            <div class="desserts__grid">
+              <div class="platCarte" >
+                <div class="platCarte__description">
+                  <h3 class="platCarte__nom">Pétales de violettes glacés</h3>
+                  <p class="platCarte__detail">Et purée de noisettes</p>
+                </div>
+                <span class="platCarte__prix">18€</span>
+                <div class="platCarte__check">
+                  <i class="fas fa-check-circle"></i>
+                </div>
               </div>
-              <span class="platCarte__prix">18€</span>
-              <div class="platCarte__check">
-                <i class="fas fa-check-circle"></i>
+              <div class="platCarte" >
+                <div class="platCarte__description">
+                  <h3 class="platCarte__nom">Fondant au chocolat</h3>
+                  <p class="platCarte__detail">Revisité</p>
+                </div>
+                <span class="platCarte__prix">22€</span>
+                <div class="platCarte__check">
+                  <i class="fas fa-check-circle"></i>
+                </div>
               </div>
-            </label>
-
-            <input
-              type="checkbox"
-              id="dessert2"
-              name="dessert2"
-              class="platCheckBox"
-            />
-            <label class="platCarte" for="dessert2">
-              <div class="platCarte__description">
-                <h3 class="platCarte__nom">Fondant au chocolat</h3>
-                <p class="platCarte__detail">Revisité</p>
+              <div class="platCarte" >
+                <div class="platCarte__description">
+                  <h3 class="platCarte__nom">Tarte au citron meringuée</h3>
+                  <p class="platCarte__detail">Déstructurée</p>
+                </div>
+                <span class="platCarte__prix">23€</span>
+                <div class="platCarte__check">
+                  <i class="fas fa-check-circle"></i>
+                </div>
               </div>
-              <span class="platCarte__prix">22€</span>
-              <div class="platCarte__check">
-                <i class="fas fa-check-circle"></i>
-              </div>
-            </label>
-
-            <input
-              type="checkbox"
-              id="dessert3"
-              name="dessert3"
-              class="platCheckBox"
-            />
-            <label class="platCarte" for="dessert3">
-              <div class="platCarte__description">
-                <h3 class="platCarte__nom">Tarte au citron meringuée</h3>
-                <p class="platCarte__detail">Déstructurée</p>
-              </div>
-              <span class="platCarte__prix">23€</span>
-              <div class="platCarte__check">
-                <i class="fas fa-check-circle"></i>
-              </div>
-            </label>
+            </div>
           </div>
-        </fieldset>
+        </div>
         <input type="submit" class="menu__commander" value="Commander" />
-        <!-- <div class="menu__bouton">
-          <input type="submit" value="" />
-          <a href="#" class="menu__commander">Commander</a>
-        </div> -->
-      </form>
+
+      </section>
     </main>
     <!-- FOOTER -->
     <footer class="footer">

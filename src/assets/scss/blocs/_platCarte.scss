@@ -8,8 +8,8 @@
   overflow: hidden;
   border-radius: 1rem;
   box-shadow: 0px 5px 10px 2px rgb(0 0 0 / 8%);
-  margin-bottom: 1rem;
-
+  max-width: 420px;
+  margin: 0 auto 1rem auto;
   @for $i from 1 to 5 {
     &:nth-child(#{$i*2}) {
       animation: apparition-cartes 0.2s ease-out #{$i * 0.1s} backwards;
@@ -17,7 +17,7 @@
   }
 
   &__description {
-    padding-left: 1rem;
+    padding:0 1rem;
     height: 100%;
     width: 85%;
     display: flex;
@@ -35,6 +35,7 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    font-size: 0.9rem;
   }
   &__prix {
     font-weight: 600;
@@ -60,9 +61,7 @@
     }
   }
 }
-.platCheckBox {
-  display: none;
-  &:checked + .platCarte {
+.platCarte:hover {
     .platCarte__description {
       width: calc(85% - 3.8rem);
     }
@@ -74,7 +73,6 @@
       }
     }
   }
-}
 @keyframes apparition-cartes {
   0% {
     transform: translateY(0.5rem);
