@@ -11,7 +11,7 @@
   max-width: 420px;
   margin: 0 auto 1rem auto;
   @for $i from 1 to 5 {
-    &:nth-child(#{$i*2}) {
+    &:nth-child(#{$i}) {
       animation: apparition-cartes 0.2s ease-out #{$i * 0.1s} backwards;
     }
   }
