@@ -1,6 +1,3 @@
 node_modules
 .parcel-cache/
-src/lanoteenchantee.html
-src/lapalettedugout.html
-src/ledelicedessens.html
 dist/
