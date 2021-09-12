@@ -26,6 +26,23 @@
     overflow: hidden;
     -webkit-box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.08);
     box-shadow: 0px 5px 10px 2px rgb(0 0 0 / 8%);
+    position: relative;
+    &:hover{
+    -webkit-box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.35);
+    box-shadow: 0px 5px 10px 2px rgb(0 0 0 / 35%);
+
+    }
+    &::before{
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background: #000;
+      z-index: -10;
+      transform: translateX(10px);
+    }
     @media screen and (min-width:768px) {
       width: 45%;
     }

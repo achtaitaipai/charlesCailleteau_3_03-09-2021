@@ -14,9 +14,13 @@
     }
     &__lien {
       color: white;
+      transition: 300ms ease-in-out;
       i {
         width: 1.5rem;
         font-size: 0.8rem;
+      }
+      &:hover{
+        color:$rose;
       }
       &--logo {
         font-family: "Shrikhand", cursive;
