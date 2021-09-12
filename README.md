@@ -1,8 +1,3 @@
-
-
-Troisième projet du parcours Developpeur Front-End de OpenClassRooms.
-
-
 # Dynamiser une page web avec des animations css
 
 Troisième projet du parcours Developpeur Front-End de OpenClassRooms.
